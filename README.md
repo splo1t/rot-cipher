@@ -111,7 +111,7 @@ ROT (rotation) cipher is a simple letter substitution cipher that replaces each 
 
 ```
 rot-cipher-tool/
-├── rot_cipher_tool.py          # Main program file
+├── rotcipher.py                # Main program file
 ├── rot_cipher_history.txt      # Auto-generated log file
 └── README.md                   # This documentation
 ```
@@ -156,15 +156,6 @@ The tool provides an enhanced terminal experience with:
 - **Cross-Platform**: Works on Windows, Linux, and macOS
 - **Memory Efficient**: No external dependencies or heavy libraries
 
-### Key Functions
-```python
-rot_cipher(text, shift, decode=False)    # Core encryption/decryption
-print_ascii_art()                        # Startup visual display
-display_menu(rot_value)                  # Interactive menu system
-save_to_log(operation, original, result) # History logging
-typewriter_effect(text, delay=0.05)     # Text animation
-```
-
 ## 🚨 Usage Tips
 
 ### Best Practices
@@ -189,7 +180,7 @@ typewriter_effect(text, delay=0.05)     # Text animation
 python --version
 
 # Use python3 if needed
-python3 rot_cipher_tool.py
+python3 rotcipher.py
 ```
 
 **Colors not displaying:**
@@ -199,7 +190,7 @@ python3 rot_cipher_tool.py
 **Permission errors:**
 ```bash
 # Make file executable (Linux/Mac)
-chmod +x rot_cipher_tool.py
+chmod +x rotcipher.py
 ```
 
 **History file issues:**
